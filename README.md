@@ -8,7 +8,8 @@ Install Spring Tool Suite from Eclipse Marketplace
 Steps:
 1. Create new sprinf starter project
 2. Update artifact id and name and group id
-3. Select Dependencies : Web (Spring MVC Project), JPA, SQL (Sql driver)
+3. Select Dependencies : Web, JPA, SQL (Sql driver)
+(Added Embedd tomcat jasper dependency )
 4. Structure with dependencies is ready
 
 Start Coding:
