@@ -6,21 +6,33 @@ Install Spring Tool Suite from Eclipse Marketplace
 
 # Steps to create Spring Boot Project : Student Management system
 Steps:
-1. Create new sprinf starter project
+1. Create new sprint starter project
 2. Update artifact id and name and group id
 3. Select Dependencies : Web, JPA, SQL (Sql driver)
 (Added Embedd tomcat jasper dependency )
 4. Structure with dependencies is ready
 
+** with embedded tomcat : it will run as normal java application.
 Start Coding:
 
    create a database and create table : MySQL Workbench
    Create Model Class // Data Access Layer
-   1.  JPa annotated Class : Class Name is same to Table name and Class variables are same to Table Columns
-   2.  CRUD Repository Class 
+   1.  JPA annotated Class : Class Name is same to Table name and Class variables are same to Table Columns
+   	javax.persistence.entity :  @Entity
+	javax.persistence.table : @Table
+	@Id: primary key
+	@Column(name = '',unique = true/false,nullable ..)
+	@JoinColumn
+	
+   2.  CRUD Repository Class / JPA Repositry
+   	@Query : native sql queries
    3. application.properties : 
         1. update the DATA SOURCE URL : jdbc and localhost and database name
         2. mention the username and password and show-sql = true
+	3. // view resolver
+		prefix and suffix
+	4. 	
+			
   
    
    create a service Layer
